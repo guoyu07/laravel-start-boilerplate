@@ -9,7 +9,12 @@
 		@yield('head')
 	</head>
     <body>
-        <header id="header"></header>
+        <header id="header">
+            <!-- Example server route -->
+            <ul class="dropdown-menu">
+                <li><a href="{{ URL::route('SignIn') }}" title="" class="color_link">Sign In ญฟเำ</a></li>
+            </ul>
+        </header>
         <section id="app">
             @if (count($errors) > 0)
             <div class="alert alert-danger alert-dismissable" style="width: 30%;
